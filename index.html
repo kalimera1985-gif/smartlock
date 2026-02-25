@@ -104,9 +104,10 @@
     }
     .card img {
       width: 100%;
-      height: 180px;
-      object-fit: cover;
+      height: 220px;          /* чуть увеличил высоту под вертикальные фото замков */
+      object-fit: contain;    /* чтобы весь замок помещался без обрезки */
       border-radius: 6px;
+      background: #f8f8f8;    /* светлый фон на случай прозрачности */
     }
     .cart-icon {
       cursor: pointer;
@@ -205,7 +206,6 @@
       font-size: 0.95rem;
     }
 
-    /* Адаптивность */
     @media (max-width: 680px) {
       header {
         flex-direction: column;
@@ -230,7 +230,7 @@
         gap: 1.2rem;
       }
       .card img {
-        height: 160px;
+        height: 200px;
       }
       #cart-content {
         width: 96%;
@@ -281,21 +281,37 @@
 </section>
 
 <section id="catalog">
-  <h2>Лучшие смарт-замки в Астане и Казахстане</h2>
+  <h2>Лучшие смарт-замки OSPON в Астане и Казахстане</h2>
   <div class="products">
-    <div class="card" data-id="1" data-name="Биометрия Wi-Fi" data-price="50000">
-      <img src="lock1.jpg" alt="Биометрический умный замок Wi-Fi Астана">
-      <h3>Биометрия Wi-Fi</h3>
-      <p>50 000 тг</p>
+
+    <div class="card" data-id="1" data-name="OSPON Intelligent Smart Lock (вертикальный)" data-price="85000">
+      <img src="https://i.ibb.co/9m3t6z25/IMG-2525.png" alt="OSPON Intelligent Smart Lock в упаковке — биометрический замок с отпечатком пальца">
+      <h3>OSPON Intelligent</h3>
+      <p>85 000 тг</p>
       <button class="btn add-to-cart">В корзину</button>
     </div>
-    <div class="card" data-id="2" data-name="Keypad компакт" data-price="30000">
-      <img src="lock2.jpg" alt="Компактный смарт-замок с PIN для межкомнатных дверей">
-      <h3>Keypad компакт</h3>
-      <p>30 000 тг</p>
+
+    <div class="card" data-id="2" data-name="OSPON Smart Lock с ручкой" data-price="95000">
+      <img src="https://i.ibb.co/4g9XDg5p/IMG-2530.png" alt="OSPON Smart Lock с ручкой и клавиатурой — умный дверной замок">
+      <h3>OSPON с ручкой</h3>
+      <p>95 000 тг</p>
       <button class="btn add-to-cart">В корзину</button>
     </div>
-    <!-- Добавляйте новые карточки здесь -->
+
+    <div class="card" data-id="3" data-name="OSPON Intelligent (фронтальный вид)" data-price="85000">
+      <img src="https://i.ibb.co/gZxjBhzY/IMG-2526.png" alt="OSPON Intelligent Smart Lock — вид спереди с дисплеем и сканером отпечатка">
+      <h3>OSPON Intelligent (фронт)</h3>
+      <p>85 000 тг</p>
+      <button class="btn add-to-cart">В корзину</button>
+    </div>
+
+    <div class="card" data-id="4" data-name="OSPON Smart Lock (комплект)" data-price="92000">
+      <img src="https://i.ibb.co.com/vxcc0tjb/IMG-2524.png" alt="Комплект умного замка OSPON в упаковке и на подставке">
+      <h3>OSPON Smart Lock комплект</h3>
+      <p>92 000 тг</p>
+      <button class="btn add-to-cart">В корзину</button>
+    </div>
+
   </div>
 </section>
 
