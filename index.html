@@ -1,515 +1,1234 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartLock Астана — умные замки для дверей</title>
-  <meta name="description" content="Купить умные замки в Астане от 30 000 тг: биометрия, Wi-Fi, PIN-код, камера. OSPON и TUYA модели с доставкой по Казахстану. Надёжная защита и удобство без ключей.">
-  <meta name="keywords" content="умные замки Астана, смарт замок Казахстан, биометрический замок, умный замок входная дверь, smart lock Астана, купить умный замок Астана, замок с отпечатком пальца, умный замок TUYA, OSPON замок">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#003366">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TS PROJECT ASTANA — Пакеты ремонта</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap');
 
-  <link rel="canonical" href="https://baspaldaq.kz">
-  <link rel="alternate" hreflang="ru-KZ" href="https://baspaldaq.kz">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "SmartLock Астана",
-    "url": "https://baspaldaq.kz",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://baspaldaq.kz/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-dark: #A07830;
+    --dark: #0D0D0D;
+    --dark2: #141414;
+    --dark3: #1C1C1C;
+    --dark4: #242424;
+    --gray: #888;
+    --light: #F5F0E8;
+    --white: #FFFFFF;
   }
-  </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "SmartLock Астана",
-    "telephone": "+77075061928",
-    "email": "r.tabarikov@outlook.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Астана",
-      "addressCountry": "KZ"
-    },
-    "url": "https://baspaldaq.kz",
-    "paymentAccepted": "Cash, Credit Card, Kaspi",
-    "currenciesAccepted": "KZT"
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
   }
-  </script>
 
-  <!-- Google Analytics (замени G-XXXXXXXXXX на реальный Measurement ID) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1YKCLJ8B0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Z1YKCLJ8B0');
-  </script>
-
-  <style>
-    :root {
-      --dark:  #003366;
-      --green: #00cc66;
-      --light: #f9f9f9;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, sans-serif; color: #444; background: #fff; line-height: 1.5; }
-    header { background: var(--dark); color: #fff; padding: 1rem 1.2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    header h2 { margin: 0; font-size: 1.6rem; }
-    nav ul { list-style: none; display: flex; gap: 1.2rem; margin: 0; padding: 0; flex-wrap: wrap; justify-content: center; }
-    nav a { color: #fff; text-decoration: none; font-size: 1rem; }
-    .hero { background: #000 url('hero.jpg') center/cover no-repeat; min-height: 50vh; display: grid; place-items: center; text-align: center; color: #fff; padding: 2rem 1rem; }
-    .hero h1 { margin: 0.4em 0; font-size: clamp(1.9rem, 7vw, 2.8rem); line-height: 1.15; }
-    .btn { background: var(--green); color: #fff; border: none; padding: 0.9rem 1.8rem; font-size: 1.05rem; cursor: pointer; border-radius: 4px; transition: background 0.2s; }
-    .btn:hover { background: #00b359; }
-    section { padding: 2.5rem 1rem; text-align: center; }
-    #catalog .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 2rem auto; padding: 0 0.5rem; }
-    .card { border: 1px solid #ddd; background: var(--light); padding: 1.2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-align: left; }
-    .card img { width: 100%; height: 260px; object-fit: contain; border-radius: 6px; background: #f8f8f8; margin-bottom: 1rem; }
-    .card h3 { margin: 0.5rem 0; font-size: 1.3rem; }
-    .card .price { font-size: 1.4rem; font-weight: bold; color: var(--dark); margin: 0.8rem 0; }
-    .card .description { font-size: 0.95rem; color: #555; margin: 0.8rem 0 1.2rem; }
-    .card .specs { font-size: 0.9rem; margin: 1rem 0; padding-left: 1.2rem; }
-    .card .specs li { margin: 0.4rem 0; }
-    .cart-icon { cursor: pointer; position: relative; font-size: 1rem; }
-    #cart-count { position: absolute; top: -8px; right: -10px; background: red; color: #fff; border-radius: 50%; padding: 3px 7px; font-size: 0.75rem; min-width: 18px; text-align: center; }
-
-    #cart-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; z-index: 1000; }
-    #cart-content { background: #fff; padding: 1.5rem; width: 92%; max-width: 540px; max-height: 90vh; border-radius: 12px; position: relative; overflow-y: auto; }
-    .close { position: absolute; top: 10px; right: 15px; font-size: 2.2rem; cursor: pointer; color: #555; }
-    #cart-items { list-style: none; padding: 0; margin: 1.2rem 0; }
-    #cart-items li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.8rem; margin: 1rem 0; padding-bottom: 0.8rem; border-bottom: 1px solid #eee; }
-    .qty { display: flex; align-items: center; gap: 0.5rem; }
-    .qty button { width: 32px; height: 32px; background: #eee; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 1.1rem; }
-
-    #features > div, #trust > div { display: flex; justify-content: center; gap: 1.8rem; flex-wrap: wrap; max-width: 1100px; margin: 2rem auto; }
-    #features h3, #trust h3 { margin: 0.4em 0; }
-
-    #reviews .review { border: 1px solid #ddd; padding: 1rem; margin: 1rem auto; max-width: 700px; border-radius: 8px; text-align: left; }
-    #faq details { margin: 1rem auto; max-width: 800px; text-align: left; }
-
-    footer { background: var(--dark); color: #fff; padding: 1.8rem 1rem; text-align: center; font-size: 0.95rem; }
-
-    @media (max-width: 680px) {
-      header { flex-direction: column; padding: 1.2rem; }
-      nav ul { gap: 1rem; font-size: 0.95rem; }
-      .hero { min-height: 45vh; padding: 1.5rem 1rem; }
-      section { padding: 2rem 0.8rem; }
-      #catalog .products { grid-template-columns: 1fr; }
-    }
-  </style>
-<!-- Schema для OSPON FB-5050 -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "OSPON FB-5050",
-  "image": "https://i.ibb.co/4g9XDg5p/IMG-2530.png",
-  "description": "Элегантный чёрный умный замок с цифровой клавиатурой, PIN-кодом, Bluetooth и механическим ключом. Подходит для дверей 35–55 мм. Идеален для входной двери в Астане.",
-  "sku": "os8818",
-  "brand": {
-    "@type": "Brand",
-    "name": "OSPON"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://baspaldaq.kz/#catalog",
-    "priceCurrency": "KZT",
-    "price": "55000",
-    "itemCondition": "https://schema.org/NewCondition",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "SmartLock Астана"
-    }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "12"
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 60px 20px;
   }
-}
-</script>
 
-<!-- Schema для OSPON Smart Lock TUYA SPAIN (с камерой) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "OSPON Smart Lock TUYA SPAIN",
-  "image": "https://i.ibb.co/gZxjBhzY/IMG-2526.png",
-  "description": "Инновационный умный замок с встроенной HD-камерой, видеозвонком, распознаванием лица и удалённым управлением через TUYA app. Wi-Fi, ночное видение, идеален для смарт-дома в Астане.",
-  "sku": "os595",
-  "brand": {
-    "@type": "Brand",
-    "name": "OSPON"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://baspaldaq.kz/#catalog",
-    "priceCurrency": "KZT",
-    "price": "125000",
-    "itemCondition": "https://schema.org/NewCondition",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "SmartLock Астана"
-    }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "8"
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 80% 80%, rgba(201,168,76,0.08) 0%, transparent 60%);
+    pointer-events: none;
   }
-}
-</script>
 
-<!-- Schema для OSPON OS6600NFC -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "OSPON OS6600NFC",
-  "image": "https://i.ibb.co/9m3t6z25/IMG-2525.png",
-  "description": "Стильный тёмно-синий умный замок с биометрией (до 100 отпечатков пальцев и ладоней), NFC, PIN-кодом и face ID. Подходит для большой семьи или офиса. Двери 35–50 мм.",
-  "sku": "os6600",
-  "brand": {
-    "@type": "Brand",
-    "name": "OSPON"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://baspaldaq.kz/#catalog",
-    "priceCurrency": "KZT",
-    "price": "95000",
-    "itemCondition": "https://schema.org/NewCondition",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "SmartLock Астана"
-    }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "10"
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 30%, transparent 100%);
   }
-}
-</script>
-  
+
+  .hero-tag {
+    display: inline-block;
+    border: 1px solid rgba(201,168,76,0.5);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    border-radius: 2px;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 0.8s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(56px, 10vw, 110px);
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 0.8s ease 0.15s both;
+  }
+
+  .hero-title span {
+    display: block;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(255,255,255,0.55);
+    margin-top: 16px;
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 0.8s ease 0.3s both;
+  }
+
+  .hero-divider {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 40px auto;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 0.8s ease 0.45s both;
+  }
+
+  .hero-promise {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    animation: fadeInDown 0.8s ease 0.6s both;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.3);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+    animation: fadeIn 1s ease 1s both;
+    text-decoration: none;
+  }
+
+  .scroll-arrow {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 2s ease infinite;
+  }
+
+  /* ===== INTRO STRIP ===== */
+  .intro-strip {
+    background: var(--dark3);
+    border-top: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    padding: 48px 40px;
+  }
+
+  .intro-strip-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+  }
+
+  .stat-item {}
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-top: 8px;
+  }
+
+  /* ===== SECTION HEADER ===== */
+  .section-header {
+    text-align: center;
+    padding: 80px 20px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .section-desc {
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.8;
+  }
+
+  /* ===== PACKAGES GRID ===== */
+  .packages-section {
+    padding: 60px 20px 100px;
+  }
+
+  .packages-grid {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 24px;
+  }
+
+  .pkg-card {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    cursor: default;
+  }
+
+  .pkg-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,168,76,0.2);
+    border-color: rgba(201,168,76,0.25);
+  }
+
+  .pkg-card.featured {
+    border-color: rgba(201,168,76,0.35);
+    box-shadow: 0 0 0 1px rgba(201,168,76,0.12), 0 20px 60px rgba(0,0,0,0.4);
+  }
+
+  .pkg-card.featured:hover {
+    box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,168,76,0.4);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--dark);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 2px;
+  }
+
+  .pkg-header {
+    padding: 36px 32px 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+  }
+
+  .pkg-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    opacity: 0.7;
+  }
+
+  .pkg-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+  }
+
+  .pkg-tagline {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    min-height: 42px;
+  }
+
+  .pkg-price-block {
+    padding: 24px 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .price-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 6px;
+  }
+
+  .price-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .price-currency {
+    font-size: 18px;
+    vertical-align: super;
+    margin-left: 2px;
+    opacity: 0.7;
+  }
+
+  .price-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 6px;
+  }
+
+  .guarantee-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 2px;
+    padding: 5px 12px;
+    font-size: 11px;
+    color: var(--gold-light);
+    letter-spacing: 1px;
+  }
+
+  .pkg-for {
+    padding: 18px 32px;
+    background: rgba(201,168,76,0.04);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .pkg-for-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 6px;
+  }
+
+  .pkg-for-text {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+  }
+
+  .pkg-body {
+    padding: 24px 32px 32px;
+  }
+
+  .pkg-section-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 18px 0 10px;
+    opacity: 0.8;
+  }
+
+  .pkg-section-title:first-child { margin-top: 0; }
+
+  .pkg-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .pkg-features li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .pkg-features li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    opacity: 0.5;
+    font-size: 11px;
+    top: 1px;
+  }
+
+  .pkg-cta {
+    display: block;
+    margin: 28px 32px 32px;
+    padding: 14px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .pkg-cta:hover {
+    background: var(--gold);
+    color: var(--dark);
+    border-color: var(--gold);
+  }
+
+  .pkg-card.featured .pkg-cta {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--dark);
+    border-color: transparent;
+  }
+
+  .pkg-card.featured .pkg-cta:hover {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    box-shadow: 0 8px 24px rgba(201,168,76,0.3);
+  }
+
+  /* ===== INCLUDED SECTION ===== */
+  .included-section {
+    background: var(--dark2);
+    border-top: 1px solid rgba(201,168,76,0.1);
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+    padding: 80px 20px;
+  }
+
+  .included-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .included-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 56px;
+  }
+
+  .inc-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .inc-icon {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+
+  .inc-text h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .inc-text p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.6;
+  }
+
+  /* ===== PAYMENT ===== */
+  .payment-section {
+    padding: 80px 20px;
+  }
+
+  .payment-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 56px;
+  }
+
+  @media (max-width: 700px) {
+    .payment-grid { grid-template-columns: 1fr; }
+  }
+
+  .payment-card {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 4px;
+    padding: 36px;
+  }
+
+  .payment-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    color: var(--gold-light);
+  }
+
+  .payment-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .payment-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .step-text {
+    padding-top: 4px;
+  }
+
+  .step-pct {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .step-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 3px;
+    line-height: 1.5;
+  }
+
+  .discounts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .disc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+  }
+
+  .disc-pct {
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.25);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    line-height: 1.4;
+    margin-top: 1px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--dark2);
+    border-top: 1px solid rgba(201,168,76,0.12);
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 300;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+
+  .footer-tagline {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+    margin-bottom: 32px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .contact-item {
+    text-align: center;
+  }
+
+  .contact-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+    margin-bottom: 6px;
+  }
+
+  .contact-val {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    color: rgba(255,255,255,0.18);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 24px;
+    letter-spacing: 1px;
+  }
+
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 0.8; transform: scaleY(1.1); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-section {
+    padding: 0 20px 80px;
+  }
+
+  .compare-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  .compare-table th {
+    padding: 18px 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    color: var(--gold);
+  }
+
+  .compare-table th:first-child {
+    text-align: left;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .compare-table td {
+    padding: 14px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+  }
+
+  .compare-table td:first-child {
+    text-align: left;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .compare-table tr:hover td {
+    background: rgba(201,168,76,0.03);
+  }
+
+  .check { color: var(--gold); font-size: 16px; }
+  .cross { color: rgba(255,255,255,0.15); font-size: 14px; }
+
+  .compare-table .price-row td {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--gold);
+    padding: 22px 20px;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .compare-table .price-row td:first-child {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 2px; }
+</style>
 </head>
 <body>
 
-<header>
-  <h2>SmartLock</h2>
-  <nav>
-    <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#catalog">Каталог</a></li>
-      <li><a href="#features">Преимущества</a></li>
-      <li><a href="#delivery">Доставка</a></li>
-      <li><a href="#reviews">Отзывы</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li class="cart-icon">Корзина <span id="cart-count">0</span></li>
-    </ul>
-  </nav>
-</header>
-
+<!-- ===== HERO ===== -->
 <section class="hero">
-  <div>
-    <h1>Умные замки для дома в Астане — безопасность без ключей</h1>
-    <button class="btn" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">Смотреть каталог</button>
-    <button class="btn" style="margin-left:1rem;" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Заказать консультацию</button>
-  </div>
+  <div class="hero-grid"></div>
+  <div class="hero-tag">Астана · Ремонт под ключ</div>
+  <h1 class="hero-title">
+    TS PROJECT<br><span>ASTANA</span>
+  </h1>
+  <p class="hero-sub">Четыре пакета ремонта для вашей квартиры</p>
+  <div class="hero-divider"></div>
+  <p class="hero-promise">От бюджетного до премиального — создаём пространство, в котором хочется жить. С гарантией, прозрачной сметой и ежедневным контролем.</p>
+  <a href="#packages" class="hero-scroll">
+    <div class="scroll-arrow"></div>
+    Смотреть пакеты
+  </a>
 </section>
 
-<section id="catalog">
-  <h2>Лучшие модели умных замков OSPON и TUYA</h2>
-  <p style="max-width:800px; margin:0 auto 2rem;">Выберите надёжный умный замок с биометрией, Wi-Fi или PIN-кодом. Доставка по Астане бесплатно, по Казахстану — от 2000 тг. Установка от 5000 тг.</p>
-  
-  <div class="products">
-
-    <!-- Фото 1 -->
-    <div class="card" data-id="os8818" data-name="OSPON FB-5050" data-price="55000">
-      <img src="https://i.ibb.co/4g9XDg5p/IMG-2530.png" alt="Купить OSPON FB-5050 — умный замок с PIN-кодом и Bluetooth в Астане" loading="lazy">
-      <h3>OSPON FB-5050</h3>
-      <p class="price">55 000 тг</p>
-      <p class="description">
-        Элегантный чёрный умный замок с цифровой клавиатурой и рычажной ручкой. Быстрый доступ без ключей, идеален для входной двери в Астане.
-      </p>
-      <ul class="specs">
-        <li><strong>Разблокировка:</strong> PIN-код, Bluetooth (eKey), механический ключ, смартфон, карточка</li>
-        <li><strong>Питание:</strong> 4×AA</li>
-        <li><strong>Материал:</strong> Цинковый сплав</li>
-        <li><strong>Функции:</strong> Автоблокировка, уведомления о взломе</li>
-        <li><strong>Совместимость:</strong> Двери 35–55 мм</li>
-        <li><strong>Цвет:</strong> Чёрный</li>
-      </ul>
-      <button class="btn add-to-cart">В корзину</button>
+<!-- ===== STATS ===== -->
+<div class="intro-strip">
+  <div class="intro-strip-inner">
+    <div class="stat-item reveal">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Пакета ремонта</div>
     </div>
-
-    <!-- Фото 2 -->
-    <div class="card" data-id="os595" data-name="OSPON TUYA with Camera" data-price="125000">
-      <img src="https://i.ibb.co/gZxjBhzY/IMG-2526.png" alt="Купить OSPON TUYA с камерой и глазком — умный замок с Wi-Fi в Казахстане" loading="lazy">
-      <h3>OSPON Smart Lock TUYA SPAIN</h3>
-      <p class="price">125 000 тг</p>
-      <p class="description">
-        Инновационный замок с HD-камерой, видеозвонком и распознаванием лица. Полный контроль через TUYA app.
-      </p>
-      <ul class="specs">
-        <li><strong>Разблокировка:</strong> Отпечаток, PIN, карта, TUYA app, распознавание лица</li>
-        <li><strong>Питание:</strong> Литий-ионная батарея</li>
-        <li><strong>Функции:</strong> Видеозвонок, удалённое управление, ночное видение</li>
-        <li><strong>Камера:</strong> HD</li>
-        <li><strong>Совместимость:</strong> Wi-Fi, двери 40–60 мм</li>
-        <li><strong>Цвет:</strong> Чёрный</li>
-      </ul>
-      <button class="btn add-to-cart">В корзину</button>
+    <div class="stat-item reveal">
+      <div class="stat-num">12</div>
+      <div class="stat-label">Месяцев гарантии<br><small style="font-size:10px;opacity:0.5">(в Elite пакетах)</small></div>
     </div>
-
-    <!-- Фото 3 -->
-    <div class="card" data-id="os6600" data-name="OSPON OS6600NFC" data-price="95000">
-      <img src="https://i.ibb.co/9m3t6z25/IMG-2525.png" alt="Купить OSPON OS6600NFC — умный замок с отпечатком пальца и NFC в Астане" loading="lazy">
-      <h3>OSPON OS6600NFC</h3>
-      <p class="price">95 000 тг</p>
-      <p class="description">
-        Стильный замок в тёмно-синем цвете с биометрией и NFC. До 100 отпечатков пальцев/ладоней и кодов — идеален для большой семьи или офиса.
-      </p>
-      <ul class="specs">
-        <li><strong>Разблокировка:</strong> Отпечаток (до 100), PIN, NFC, ключ, голос, face ID</li>
-        <li><strong>Питание:</strong> 4×AA</li>
-        <li><strong>Функции:</strong> Анти-взлом alarm, автоблокировка</li>
-        <li><strong>Материал:</strong> Цинковый сплав</li>
-        <li><strong>Совместимость:</strong> Двери 35–50 мм</li>
-        <li><strong>Цвет:</strong> Тёмно-синий</li>
-      </ul>
-      <button class="btn add-to-cart">В корзину</button>
+    <div class="stat-item reveal">
+      <div class="stat-num">100<small style="font-size:20px;">%</small></div>
+      <div class="stat-label">Фото-отчёт скрытых работ</div>
     </div>
-
-    <!-- Фото 4 -->
-    <div class="card" data-id="os173b" data-name="OSPON OS173B" data-price="75000">
-      <img src="https://i.ibb.co/xSmZ40Gk/IMG-2529-1.png" alt="Купить OSPON OS173B — компактный биометрический замок с Bluetooth в Казахстане" loading="lazy">
-      <h3>OSPON OS173B Bluetooth Privacy</h3>
-      <p class="price">75 000 тг</p>
-      <p class="description">
-        Компактный замок с privacy-режимом, зелёным индикатором и надёжной биометрией. Управление через Bluetooth.
-      </p>
-      <ul class="specs">
-        <li><strong>Разблокировка:</strong> Отпечаток, Bluetooth, PIN, ключ</li>
-        <li><strong>Питание:</strong> 4×AA</li>
-        <li><strong>Функции:</strong> Privacy mode, уведомления в приложении</li>
-        <li><strong>Материал:</strong> Алюминий + пластик</li>
-        <li><strong>Совместимость:</strong> Двери 30–55 мм</li>
-        <li><strong>Цвет:</strong> Чёрный</li>
-      </ul>
-      <button class="btn add-to-cart">В корзину</button>
+    <div class="stat-item reveal">
+      <div class="stat-num">0</div>
+      <div class="stat-label">Скрытых доплат<br><small style="font-size:10px;opacity:0.5">прозрачная смета</small></div>
     </div>
-
-    <!-- Фото 5 -->
-    <div class="card" data-id="gygg-cook" data-name="OSPON Smart Lock TUYA" data-price="85000">
-      <img src="https://i.ibb.co/fdqQ9N0h/IMG-2528.png" alt="Купить OSPON Smart Lock TUYA — умный замок с биометрией и зелёным индикатором в Астане" loading="lazy">
-      <h3>OSPON Smart Lock TUYA</h3>
-      <p class="price">85 000 тг</p>
-      <p class="description">
-        Компактный мощный замок с биометрическим сканером, зелёным индикатором и Bluetooth. Privacy-режим и высокая безопасность для твоего дома.
-      </p>
-      <ul class="specs">
-        <li><strong>Разблокировка:</strong> Отпечаток пальца, Bluetooth, PIN-код, ключ, face ID</li>
-        <li><strong>Питание:</strong> 4×AA</li>
-        <li><strong>Функции:</strong> Privacy mode, автоблокировка, уведомления в app</li>
-        <li><strong>Материал:</strong> Алюминий + пластик</li>
-        <li><strong>Совместимость:</strong> Двери 30–55 мм</li>
-        <li><strong>Цвет:</strong> Чёрный</li>
-      </ul>
-      <button class="btn add-to-cart">В корзину</button>
-    </div>
-
-  </div>
-</section>
-
-<section id="features">
-  <h2>Почему выбирают SmartLock</h2>
-  <div>
-    <div><h3>Удобство</h3><p>Управление со смартфона, голосовыми помощниками</p></div>
-    <div><h3>Безопасность</h3><p>Шифрование, уведомления о попытках взлома</p></div>
-    <div><h3>Интеграция</h3><p>Alexa, Google Home, Яндекс Алиса</p></div>
-  </div>
-</section>
-
-<section id="trust">
-  <h2>Гарантии и оплата</h2>
-  <div>
-    <div><h3>Гарантия</h3><p>1 год на все устройства</p></div>
-    <div><h3>Оплата</h3><p>При получении, Kaspi, банковской картой</p></div>
-    <div><h3>Возврат</h3><p>14 дней без объяснения причин</p></div>
-  </div>
-</section>
-
-<section id="delivery">
-  <h2>Доставка и установка</h2>
-  <p>Бесплатно по Астане. По Казахстану — от 2000 тг (3–5 дней). Профессиональная установка в Астане от 5000 тг.</p>
-</section>
-
-<section id="reviews">
-  <h2>Отзывы клиентов</h2>
-  <div class="review">
-    <p>«Замок с камерой — находка! Вижу, кто пришёл, даже когда не дома.» — Азамат, Астана</p>
-  </div>
-  <div class="review">
-    <p>«Поставили за 40 минут. Отпечаток работает мгновенно.» — Динара, Астана</p>
-  </div>
-</section>
-
-<section id="faq">
-  <h2>Часто задаваемые вопросы</h2>
-  <details>
-    <summary>Как выбрать умный замок для входной двери?</summary>
-    <p>Если нужна камера — берите TUYA модели. Для простой биометрии подойдёт OSPON FB-5050.</p>
-  </details>
-  <details>
-    <summary>Работает ли замок при минусовой температуре в Астане?</summary>
-    <p>Да, все модели рассчитаны на -20…+50 °C. Батарейки меняйте раз в 6–12 месяцев.</p>
-  </details>
-</section>
-
-<section id="contact">
-  <h2>Остались вопросы? Напишите нам</h2>
-  <form id="contact-form" style="max-width:600px; margin:2rem auto; display:flex; flex-direction:column; gap:1rem;">
-    <input type="text" name="name" placeholder="Имя" required>
-    <input type="tel" name="phone" placeholder="Телефон" required>
-    <textarea name="message" placeholder="Ваш вопрос или пожелание" rows="4"></textarea>
-    <button class="btn" type="submit">Отправить в WhatsApp</button>
-  </form>
-</section>
-
-<footer>
-  <p>+7 707 506 19 28 | r.tabarikov@outlook.com | Астана, Казахстан</p>
-  <p>Доставка по всему Казахстану</p>
-</footer>
-
-<!-- Корзина -->
-<div id="cart-modal">
-  <div id="cart-content">
-    <span class="close">×</span>
-    <h2>Корзина</h2>
-    <ul id="cart-items"></ul>
-    <p id="cart-total">Итого: 0 тг</p>
-    <button class="btn" id="checkout-btn">Оформить через WhatsApp</button>
   </div>
 </div>
 
-<script>
-const WHATSAPP_PHONE = '+77075061928';
-let cart = [];
-try { cart = JSON.parse(localStorage.getItem('cart')) || []; } catch(e) { console.warn('localStorage error'); }
+<!-- ===== PACKAGES ===== -->
+<section id="packages" class="packages-section">
+  <div class="section-header reveal">
+    <div class="section-tag">Наши пакеты</div>
+    <h2 class="section-title">Выберите свой уровень</h2>
+    <p class="section-desc">Каждый пакет — это полноценное решение под ключ с материалами, работой и гарантией</p>
+  </div>
 
-const elements = {
-  cartCount: document.getElementById('cart-count'),
-  modal: document.getElementById('cart-modal'),
-  cartItems: document.getElementById('cart-items'),
-  cartTotal: document.getElementById('cart-total'),
-  closeBtn: document.querySelector('.close'),
-  checkoutBtn: document.getElementById('checkout-btn'),
-};
+  <div class="packages-grid" style="margin-top: 48px;">
 
-function saveCart() { localStorage.setItem('cart', JSON.stringify(cart)); }
-
-function updateCartDisplay() {
-  saveCart();
-  const totalItems = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
-  elements.cartCount.textContent = totalItems;
-
-  elements.cartItems.innerHTML = '';
-  let totalPrice = 0;
-
-  cart.forEach((item, index) => {
-    const price = Number(item.price);
-    const qty = item.qty || 1;
-    const itemTotal = price * qty;
-    totalPrice += itemTotal;
-
-    const li = document.createElement('li');
-    li.innerHTML = `
-      <span>${item.name} — ${price.toLocaleString('ru-RU')} тг</span>
-      <div class="qty">
-        <button onclick="changeQuantity(${index}, -1)">−</button>
-        <span>${qty}</span>
-        <button onclick="changeQuantity(${index}, 1)">+</button>
+    <!-- START -->
+    <div class="pkg-card reveal">
+      <div class="pkg-header">
+        <div class="pkg-number">Пакет 01</div>
+        <div class="pkg-name">START</div>
+        <div class="pkg-tagline">Чистый, аккуратный ремонт для сдачи в аренду или бюджетного семейного бюджета</div>
       </div>
-      <span>${itemTotal.toLocaleString('ru-RU')} тг</span>
-      <button onclick="removeItem(${index})">×</button>
-    `;
-    elements.cartItems.appendChild(li);
+      <div class="pkg-price-block">
+        <div class="price-label">Под ключ</div>
+        <div class="price-main">110 000<span class="price-currency">₸</span></div>
+        <div class="price-sub">Только работа — от 45 000 ₸</div>
+        <div class="guarantee-badge">🛡 Гарантия 6 месяцев</div>
+      </div>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Подходит для</div>
+        <div class="pkg-for-text">Квартиры под аренду, инвестиционные квартиры, бюджетный семейный ремонт</div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-section-title">Проектирование</div>
+        <ul class="pkg-features">
+          <li>Замер квартиры</li>
+          <li>Базовое планировочное решение</li>
+          <li>Эскиз расстановки мебели (3D-модель)</li>
+        </ul>
+
+        <div class="pkg-section-title">Черновые работы</div>
+        <ul class="pkg-features">
+          <li>Демонтаж старой отделки и вывоз мусора</li>
+          <li>Электрика по типовой схеме</li>
+          <li>Сантехника: разводка, монтаж радиаторов</li>
+          <li>Выравнивание стен</li>
+          <li>Стяжка пола</li>
+          <li>Гидроизоляция санузлов</li>
+          <li>Тёплый пол — 2 точки (до 6 м²)</li>
+        </ul>
+
+        <div class="pkg-section-title">Чистовые работы</div>
+        <ul class="pkg-features">
+          <li>Обои / обои под покраску</li>
+          <li>Краска — эконом-сегмент</li>
+          <li>Керамогранит 120×60</li>
+          <li>Ламинат 32–33 класс</li>
+          <li>Плинтус полиуретан 80–120 мм</li>
+          <li>Натяжной потолок</li>
+          <li>Галтели / чёрные вставки</li>
+          <li>Двери до 2,2 м с фурнитурой</li>
+          <li>Бамбук-панели на ТВ-зону</li>
+        </ul>
+
+        <div class="pkg-section-title">Сантехника и электрика</div>
+        <ul class="pkg-features">
+          <li>Ванна 170×70 / душевой поддон</li>
+          <li>Унитаз подвесной (инсталляция)</li>
+          <li>Тропический душ + гигиенический душ</li>
+          <li>Зеркало с подсветкой</li>
+          <li>Электровытяжка</li>
+          <li>Софиты до 20 шт. и световая линия 2 м</li>
+          <li>Розетки и выключатели</li>
+        </ul>
+      </div>
+      <a href="#contact" class="pkg-cta">Выбрать пакет Start</a>
+    </div>
+
+    <!-- OPTIMUM -->
+    <div class="pkg-card featured reveal">
+      <div class="featured-badge">★ Хит продаж</div>
+      <div class="pkg-header">
+        <div class="pkg-number">Пакет 02</div>
+        <div class="pkg-name">OPTIMUM</div>
+        <div class="pkg-tagline">Полноценный современный ремонт «как для себя» с продуманным дизайном</div>
+      </div>
+      <div class="pkg-price-block">
+        <div class="price-label">Под ключ</div>
+        <div class="price-main">160 000<span class="price-currency">₸</span></div>
+        <div class="price-sub">&nbsp;</div>
+        <div class="guarantee-badge">🛡 Гарантия 6 месяцев</div>
+      </div>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Подходит для</div>
+        <div class="pkg-for-text">Семьи, делающие ремонт под себя на 10+ лет. Новостройки в стандартном сегменте</div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-section-title">Всё из пакета Start, плюс</div>
+        <ul class="pkg-features">
+          <li>Замер квартиры + базовое план. решение</li>
+          <li>Эскиз расстановки мебели (3D-модель)</li>
+          <li>Демонтаж, электрика, сантехника, стяжка</li>
+          <li>Гидроизоляция, тёплый пол — 2 точки</li>
+          <li>Керамогранит 120×60, ламинат 32–33 кл.</li>
+          <li>Натяжной потолок, галтели, двери до 2,2 м</li>
+          <li>Бамбук-панели на ТВ-зону</li>
+          <li>Ванна, унитаз подвесной, тропический душ</li>
+          <li>Зеркало с подсветкой, вытяжка, розетки</li>
+          <li>Софиты до 20 шт. и световая линия</li>
+        </ul>
+
+        <div class="pkg-section-title">Дополнительно включено</div>
+        <ul class="pkg-features">
+          <li>Бра до 2 шт.</li>
+          <li>Зеркало с подсветкой до 2 шт.</li>
+          <li>Корпусная мебель из ЛДСП во все комнаты</li>
+          <li>Диван до 2,2 м</li>
+          <li>Кровать 1,6 × 2 м</li>
+        </ul>
+      </div>
+      <a href="#contact" class="pkg-cta">Выбрать пакет Optimum</a>
+    </div>
+
+    <!-- ELITE -->
+    <div class="pkg-card reveal">
+      <div class="pkg-header">
+        <div class="pkg-number">Пакет 03</div>
+        <div class="pkg-name">ELITE</div>
+        <div class="pkg-tagline">Премиум-ремонт с индивидуальным дизайном и элитными материалами</div>
+      </div>
+      <div class="pkg-price-block">
+        <div class="price-label">Под ключ</div>
+        <div class="price-main">200 000<span class="price-currency">₸</span></div>
+        <div class="price-sub">&nbsp;</div>
+        <div class="guarantee-badge">🛡 Гарантия 12 месяцев</div>
+      </div>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Подходит для</div>
+        <div class="pkg-for-text">Квартиры в премиум-ЖК, дома, апартаменты для проживания «надолго и красиво»</div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-section-title">Проект и материалы</div>
+        <ul class="pkg-features">
+          <li>Все черновые и чистовые материалы</li>
+          <li>Рабочий проект / 3D-визуализация</li>
+          <li>Выравнивание стен под маяк</li>
+          <li>Тёплый пол — 3 точки</li>
+          <li>Керамогранит 120×60, кабанчик до 10 м²</li>
+          <li>Ламинат 33 класс / ламинат ёлочкой</li>
+          <li>Плинтус 80–120 мм / микроплинтус</li>
+          <li>Краска «Decoral», обои флизелиновые</li>
+          <li>Молдинги (4 зоны) / бамбук-панели 4,6 м</li>
+        </ul>
+
+        <div class="pkg-section-title">Потолки и освещение</div>
+        <ul class="pkg-features">
+          <li>Натяжной / парящий потолок (до 20 п.м.)</li>
+          <li>Галтели, чёрные вставки</li>
+          <li>Софиты и световая линия на кухне</li>
+          <li>Бра: 1к–2 шт, 2к–4 шт, 3к–6 шт</li>
+          <li>Подсветка всех подшторников</li>
+        </ul>
+
+        <div class="pkg-section-title">Двери и сантехника</div>
+        <ul class="pkg-features">
+          <li>Двери до 2,4 м / скрытые двери 2,2 м</li>
+          <li>Ванна 170×70 / поддон + стеклянные перегородки</li>
+          <li>Сантехника «Grohe», унитаз + инсталляция Grohe</li>
+          <li>Зеркала с подсветкой до 3 шт.</li>
+          <li>Электровытяжка</li>
+        </ul>
+
+        <div class="pkg-section-title">Умный дом</div>
+        <ul class="pkg-features">
+          <li>Розетки и выключатели Schneider/Smarthome</li>
+          <li>Монтаж 1 кондиционера (1 этап)</li>
+          <li>Мастер-выключатель</li>
+          <li>Сенсорные терморегуляторы</li>
+        </ul>
+      </div>
+      <a href="#contact" class="pkg-cta">Выбрать пакет Elite</a>
+    </div>
+
+    <!-- ELITE+ -->
+    <div class="pkg-card reveal">
+      <div class="pkg-header">
+        <div class="pkg-number">Пакет 04</div>
+        <div class="pkg-name">ELITE <span style="color:var(--gold)">+</span></div>
+        <div class="pkg-tagline">Всё включено: элитный ремонт плюс мебель премиум-класса из МДФ</div>
+      </div>
+      <div class="pkg-price-block">
+        <div class="price-label">Под ключ</div>
+        <div class="price-main">260 000<span class="price-currency">₸</span></div>
+        <div class="price-sub">&nbsp;</div>
+        <div class="guarantee-badge">🛡 Гарантия 12 месяцев</div>
+      </div>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Подходит для</div>
+        <div class="pkg-for-text">Квартиры в премиум-ЖК, дома, апартаменты для проживания «надолго и красиво»</div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-section-title">Включает всё из пакета Elite</div>
+        <ul class="pkg-features">
+          <li>Рабочий проект / 3D-визуализация</li>
+          <li>Все черновые и чистовые материалы</li>
+          <li>Тёплый пол — 3 точки, выравнивание под маяк</li>
+          <li>Натяжной / парящий потолок (до 20 п.м.)</li>
+          <li>Краска «Decoral», молдинги, бамбук-панели</li>
+          <li>Сантехника «Grohe», зеркала с подсветкой</li>
+          <li>Мастер-выключатель, кондиционер, термостаты</li>
+          <li>Schneider/Smarthome розетки и выключатели</li>
+        </ul>
+
+        <div class="pkg-section-title">Эксклюзивно в Elite+</div>
+        <ul class="pkg-features">
+          <li>Вся мебель из МДФ (премиум-исполнение)</li>
+          <li>Корпусная мебель под заказ во все зоны</li>
+          <li>Полная меблировка: кухня, спальня, гостиная</li>
+        </ul>
+      </div>
+      <a href="#contact" class="pkg-cta">Выбрать пакет Elite+</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== COMPARE ===== -->
+<div class="compare-section">
+  <div class="section-header reveal">
+    <div class="section-tag">Сравнение</div>
+    <h2 class="section-title">Что в каждом пакете</h2>
+  </div>
+  <div class="compare-inner reveal" style="margin-top: 48px;">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th style="text-align:left">Опция</th>
+          <th>Start</th>
+          <th>Optimum</th>
+          <th>Elite</th>
+          <th>Elite+</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="price-row">
+          <td>Цена под ключ</td>
+          <td>110 000</td>
+          <td>160 000</td>
+          <td>200 000</td>
+          <td>260 000</td>
+        </tr>
+        <tr><td>Гарантия</td><td>6 мес</td><td>6 мес</td><td>12 мес</td><td>12 мес</td></tr>
+        <tr><td>3D-визуализация</td><td>Эскиз</td><td>Эскиз</td><td><span class="check">✦ Полная</span></td><td><span class="check">✦ Полная</span></td></tr>
+        <tr><td>Керамогранит 120×60</td><td><span class="check">✦</span></td><td><span class="check">✦</span></td><td><span class="check">✦</span></td><td><span class="check">✦</span></td></tr>
+        <tr><td>Ламинат класс</td><td>32–33</td><td>32–33</td><td>33 / ёлочка</td><td>33 / ёлочка</td></tr>
+        <tr><td>Тёплый пол</td><td>2 точки</td><td>2 точки</td><td>3 точки</td><td>3 точки</td></tr>
+        <tr><td>Натяжной потолок</td><td><span class="check">✦</span></td><td><span class="check">✦</span></td><td>Парящий (20 п.м.)</td><td>Парящий (20 п.м.)</td></tr>
+        <tr><td>Сантехника</td><td>Стандарт</td><td>Стандарт</td><td><span class="check">✦ Grohe</span></td><td><span class="check">✦ Grohe</span></td></tr>
+        <tr><td>Молдинги / бамбук</td><td>ТВ-зона</td><td>ТВ-зона</td><td>4 зоны / 4,6 м</td><td>4 зоны / 4,6 м</td></tr>
+        <tr><td>Смарт-выключатели</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✦ Schneider</span></td><td><span class="check">✦ Schneider</span></td></tr>
+        <tr><td>Кондиционер (монтаж)</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✦ 1 шт.</span></td><td><span class="check">✦ 1 шт.</span></td></tr>
+        <tr><td>Мебель из ЛДСП</td><td><span class="cross">–</span></td><td><span class="check">✦ Все комнаты</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td></tr>
+        <tr><td>Мебель из МДФ (премиум)</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✦ Вся</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== INCLUDED ===== -->
+<section class="included-section" id="included">
+  <div class="included-inner">
+    <div class="section-header reveal" style="padding-top:0; max-width:100%; text-align:left;">
+      <div class="section-tag">Во всех пакетах</div>
+      <h2 class="section-title" style="max-width:520px">Это входит по умолчанию</h2>
+    </div>
+    <div class="included-grid">
+      <div class="inc-item reveal">
+        <div class="inc-icon">📋</div>
+        <div class="inc-text">
+          <h4>Прозрачный договор</h4>
+          <p>Договор с детальной сметой — никаких скрытых доплат</p>
+        </div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="inc-icon">👤</div>
+        <div class="inc-text">
+          <h4>Персональный менеджер</h4>
+          <p>Руслан ведёт проект на каждом этапе — всегда на связи</p>
+        </div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="inc-icon">🔍</div>
+        <div class="inc-text">
+          <h4>Ежедневный контроль</h4>
+          <p>Прораб Сандибек контролирует качество каждый день</p>
+        </div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="inc-icon">📸</div>
+        <div class="inc-text">
+          <h4>Фото-отчёт скрытых работ</h4>
+          <p>Электрика, гидроизоляция, стяжка — всё задокументировано</p>
+        </div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="inc-icon">🧹</div>
+        <div class="inc-text">
+          <h4>Уборка после каждого этапа</h4>
+          <p>Чисто на стройке — финальная уборка перед сдачей</p>
+        </div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="inc-icon">🛡</div>
+        <div class="inc-text">
+          <h4>Письменная гарантия</h4>
+          <p>Гарантийный талон на весь объём работ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAYMENT ===== -->
+<section class="payment-section" id="payment">
+  <div class="payment-inner">
+    <div class="section-header reveal" style="margin:0 0 0 0; padding-top:0; text-align:left; max-width:100%;">
+      <div class="section-tag">Оплата</div>
+      <h2 class="section-title">Удобный график платежей</h2>
+    </div>
+    <div class="payment-grid">
+      <div class="payment-card reveal">
+        <h3>График оплаты</h3>
+        <div class="payment-steps">
+          <div class="payment-step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <div class="step-pct">40%</div>
+              <div class="step-desc">После подписания договора — на старт работ и закупку черновых материалов</div>
+            </div>
+          </div>
+          <div class="payment-step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <div class="step-pct">40%</div>
+              <div class="step-desc">После завершения черновых работ</div>
+            </div>
+          </div>
+          <div class="payment-step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <div class="step-pct">20%</div>
+              <div class="step-desc">После завершения чистовых работ — финальный расчёт при сдаче</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment-card reveal">
+        <h3>Скидки и условия</h3>
+        <div class="discounts-list">
+          <div class="disc-item">
+            <span class="disc-pct">−3%</span>
+            <span>Наличная оплата 100% предоплатой</span>
+          </div>
+          <div class="disc-item">
+            <span class="disc-pct">−3%</span>
+            <span>Рекомендация — за каждого приведённого клиента</span>
+          </div>
+          <div class="disc-item">
+            <span class="disc-pct">−5%</span>
+            <span>Сезонная акция в зимний период (январь–февраль)</span>
+          </div>
+          <div class="disc-item">
+            <span class="disc-pct">+10%</span>
+            <span>Надбавка за комплексность при площади менее 30 м²</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="contact">
+  <div class="footer-logo">TS PROJECT ASTANA</div>
+  <div class="footer-tagline">Ремонт под ключ · Астана</div>
+  <div class="footer-contacts">
+    <div class="contact-item">
+      <div class="contact-label">Менеджер проекта</div>
+      <div class="contact-val">Руслан</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-label">Контроль качества</div>
+      <div class="contact-val">Сандибек (прораб)</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-label">Минимальная площадь</div>
+      <div class="contact-val">от 30 м²</div>
+    </div>
+  </div>
+  <div class="footer-copy">© 2025 TS PROJECT ASTANA · Все цены указаны за 1 м² / объект согласно пакету</div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), 80 * (Array.from(reveals).indexOf(entry.target) % 4));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
   });
-
-  elements.cartTotal.textContent = `Итого: ${totalPrice.toLocaleString('ru-RU')} тг`;
-}
-
-window.changeQuantity = (index, delta) => {
-  const item = cart[index];
-  item.qty = Math.max(1, (item.qty || 1) + delta);
-  updateCartDisplay();
-};
-
-window.removeItem = (index) => {
-  cart.splice(index, 1);
-  updateCartDisplay();
-};
-
-function addToCart(card) {
-  const { id, name, price } = card.dataset;
-  const existing = cart.find(i => i.id === id);
-  if (existing) existing.qty = (existing.qty || 1) + 1;
-  else cart.push({ id, name, price: Number(price), qty: 1 });
-  updateCartDisplay();
-  alert('Добавлено в корзину!');
-}
-
-function sendToWhatsApp() {
-  if (!cart.length) return alert('Корзина пуста');
-  let msg = 'Здравствуйте! Хочу купить:\n\n';
-  let total = 0;
-  cart.forEach(i => {
-    const sum = Number(i.price) * (i.qty || 1);
-    msg += `• ${i.name} × ${i.qty || 1} — ${sum.toLocaleString('ru-RU')} тг\n`;
-    total += sum;
-  });
-  msg += `\nИтого: ${total.toLocaleString('ru-RU')} тг\nДоставка: Астана / Казахстан`;
-  window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
-}
-
-document.querySelectorAll('.add-to-cart').forEach(btn => {
-  btn.addEventListener('click', () => addToCart(btn.closest('.card')));
-});
-
-document.querySelector('.cart-icon').addEventListener('click', () => {
-  elements.modal.style.display = 'flex';
-  updateCartDisplay();
-});
-
-elements.closeBtn.addEventListener('click', () => elements.modal.style.display = 'none');
-elements.modal.addEventListener('click', e => { if (e.target === elements.modal) elements.modal.style.display = 'none'; });
-elements.checkoutBtn.addEventListener('click', sendToWhatsApp);
-
-document.getElementById('contact-form')?.addEventListener('submit', e => {
-  e.preventDefault();
-  const form = new FormData(e.target);
-  let msg = `Здравствуйте!\nИмя: ${form.get('name')}\nТелефон: ${form.get('phone')}\nСообщение: ${form.get('message') || 'Консультация'}`;
-  window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
-  alert('Заявка отправлена!');
-});
-
-updateCartDisplay();
 </script>
-
 </body>
 </html>
